@@ -88,7 +88,8 @@ mysql -u root -p
 <img width="339" height="43" alt="image" src="https://github.com" />
 
 ### ⚙️ 5 Configurar DVWA
-
+A partir de aquí no he podido seguir porque me daba errores que no comprendía y con la ia no he conseguido nada.
+Pero después de esto lo único que falta es hacer el ataque con hydra.
 
 
 
