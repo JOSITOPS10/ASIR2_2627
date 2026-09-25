@@ -1,7 +1,5 @@
 # 🚀 Auditoría de Seguridad: Simulación de Ataque de Fuerza Bruta y Despliegue de DVWA
 
-Este repositorio contiene la documentación detallada del laboratorio de seguridad, incluyendo la preparación de diccionarios, ejecución del ataque sobre SSH, análisis de registros e instalación del entorno vulnerable DVWA.
-
 ---
 
 ## 📁 1. Fusión de los diccionarios en dymerge y pydictor
@@ -53,9 +51,7 @@ Para ello una solución seria instalar Fail2ban, tendríamos que crear un archiv
 ## 🛠️ 8. Instalar y configurar DVWA
 
 Comando de instalación: 
-```bash
 sudo apt install apache2 mariadb-server php php-mysqli php-gd libapache2-mod-php -y
-```
 
 <img width="675" height="383" alt="image" src="https://github.com" />
 
@@ -68,17 +64,15 @@ Para hacer este ataque necesito tener instalado PHP y una base de datos mariadb.
 <img width="677" height="259" alt="image" src="https://github.com" />
 
 Comando para instalr PHP: 
-```bash
 sudo apt install php php-mysqli php-gd libapache2-mod-php php-curl -y
-```
-mariadb ya viene instalada así que la habilitamos. 
+mariadb ya viene instalada así que la habilitamos.
 
 Una vez instalado lo que necesitamos que hasta ahora es como el entrono web que para ello hemos utilizado apache, php y mariadb.
 Necesitamos descargarnos DVWA para configurarlo y poder empezar a comprobar contraseñas.
 
 Descarga de DVWA: 
 
-### 📥 1 Clonar repositorio
+## 📥 1 Clonar repositorio
 <img width="632" height="145" alt="image" src="https://github.com" />
 
 ### 🔑 2 Asignar permisos
@@ -86,9 +80,7 @@ Descarga de DVWA:
 
 ### 🗄️ 3 Entrar en la base de datos y crear un usuario
 Comando para entrar:
-```bash
 mysql -u root -p
-```
 <img width="721" height="43" alt="image" src="https://github.com" /> 
 
 ### 👑 4 Le damos todos los privilegios
