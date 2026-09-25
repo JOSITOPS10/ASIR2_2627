@@ -42,7 +42,14 @@ Descarga de DVWA:
 3 Entrar en la base de datos y crear un usuario
 Comando para entrar- myql -u root -p
 <img width="721" height="43" alt="image" src="https://github.com/user-attachments/assets/f8e90ef1-493c-4195-b50e-e65213b988bd" /> 
-Después de crear el usuario le damos permisos totales
+4 Le damos todos los privilegios
+<img width="673" height="35" alt="image" src="https://github.com/user-attachments/assets/29cb1fee-ac0d-48be-ac9f-ca3b5fd016e9" />
+<img width="339" height="43" alt="image" src="https://github.com/user-attachments/assets/c62c08a6-d2aa-4ceb-a9cc-e416d437e059" />
+5 Configurar DVWA
+
+
+
+
 
 
 
