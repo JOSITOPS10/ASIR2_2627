@@ -38,8 +38,12 @@ Descarga de DVWA:
 1 Clonar repositorio
 <img width="632" height="145" alt="image" src="https://github.com/user-attachments/assets/08511194-c523-4b24-9367-077e6f29d9fb" />
 2 Asignar permisos
+<img width="369" height="105" alt="image" src="https://github.com/user-attachments/assets/b6de697b-1075-4fb1-9bdb-3abb60d45565" />
+3 Entrar en la base de datos y crear un usuario
+Comando para entrar- myql -u root -p
+<img width="721" height="43" alt="image" src="https://github.com/user-attachments/assets/f8e90ef1-493c-4195-b50e-e65213b988bd" /> 
+Después de crear el usuario le damos permisos totales
 
-Para ello necesitaremos crear un nuevo usuario.
 
 
 
