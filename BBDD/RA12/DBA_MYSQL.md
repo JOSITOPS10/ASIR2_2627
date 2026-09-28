@@ -39,18 +39,24 @@
 #AUDIO3#
 | PARAMETRO | VALOR | PORQUE |
 |--------------|--------------|--------------|
-| innodb_buffer_pool_size       | Dato 2       | Dato 3       |
-| innodb_log_file_size       | Dato 5       | Dato 6       |
-| max_connections       | Dato 5       | Dato 6       |
-| query_cache_size       | Dato 5       | Dato 6       |
-| table_open_cache       | Dato 5       | Dato 6       |
-| tmp_table_size       | Dato 5       | Dato 6       |
-| max_heap_table_size       | Dato 5       | Dato 6       |
-| innodb_flush_log_at_trx_commit       | Dato 5       | Dato 6       |
-| log_bin       | Dato 5       | Dato 6       |
-| slow_query_log       | Dato 5       | Dato 6       |
-| slow_query_log_file       | Dato 5       | Dato 6       |
-| long_query_time       | Dato 5       | Dato 6       |
-| bind-address       | Dato 5       | Dato 6       |
-| innodb_file_per_table       | Dato 5       | Dato 6       |
-| performance_schema       | Dato 5       | Dato 6       |
+| innodb_buffer_pool_size       |16G - 20G      |Ajustado para dar soporte a la base de datos principal de la red social de manera equilibrada.       |
+| innodb_log_file_size       |  1G        | 
+
+Garantiza un equilibrio adecuado entre rendimiento transaccional y tiempo de recuperación.       |
+| max_connections       | 2500       | Una red social puede tener muchos usuarios conectados al mismo tiempo.       |
+| query_cache_size       | 0       | Se evita consumir RAM adicional por la caché de consultas.      |
+| table_open_cache       | 4000       | Necesario para responder rápidamente al acceso continuo a múltiples tablas por miles de usuarios.       |
+| tmp_table_size       | 128M| Dato 6       |
+| max_heap_table_size       | Dato 5       | Se limita para evitar que muchos usuarios consuman demasiada memoria simultáneamente.   |
+| innodb_flush_log_at_trx_commit       | 1     | Se prioriza que las operaciones de los usuarios queden guardadas de forma segura.       |
+| log_bin       | /var/log/mysql/mysql-bin.log       | Activo para alta disponibilidad, replicación y tolerancia a fallos.       |
+| slow_query_log       |1      | Activo para detectar problemas de latencia que afecten la experiencia del usuario.       |
+| slow_query_log_file       | /var/log/mysql/mysql-slow.log      | Ruta del archivo de log para consultas lentas de la aplicación web.     |
+| long_query_time       |1       | Se quiere detectar rápidamente cualquier consulta que pueda perjudicar la respuesta de la red social.     |
+| bind-address       | 0.0.0.0       |Permite a los servidores de aplicaciones de la red social conectarse a la base de datos.      |
+| innodb_file_per_table       | ON / 1      | 
+
+Facilita el mantenimiento individualizado de las tablas de la red social.      |
+| performance_schema       |
+
+ON / 1      |Mantiene la monitorización activa para garantizar tiempos de respuesta rápidos en la red social.      |
