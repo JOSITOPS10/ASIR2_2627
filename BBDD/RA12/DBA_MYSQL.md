@@ -66,7 +66,7 @@ max_connections: Indica el número máximo de usuarios o aplicaciones que pueden
 table_open_cache: Define cuántas tablas puede mantener abiertas el servidor al mismo tiempo para todos los hilos activos. Ayuda a evitar que MySQL tenga que abrir y cerrar archivos en el disco constantemente.
 tmp_table_size: Limita el tamaño máximo en memoria RAM que puede ocupar una tabla temporal interna creada de forma automática (por ejemplo, al procesar consultas complejas con GROUP BY o DISTINCT).
 max_heap_table_size: Establece el tamaño máximo permitido para las tablas creadas explícitamente en la memoria RAM por el usuario (tablas de tipo MEMORY). Trabaja en conjunto con tmp_table_size.
-⏱️ Optimización y Consultas
+Optimización y Consultas
 query_cache_size: Determina la cantidad de memoria RAM dedicada a almacenar el resultado exacto de consultas de tipo SELECT. (Nota: Este parámetro quedó obsoleto y fue eliminado en versiones recientes de MySQL 8.0 en favor de optimizadores más modernos).
 Diagnóstico y Registros (Logs)
 log_bin: Activa el registro binario del servidor. Sirve para guardar un historial de todas las modificaciones hechas en la base de datos, lo cual es indispensable si necesitas hacer réplicas de servidores o restauraciones a un punto exacto en el tiempo.
