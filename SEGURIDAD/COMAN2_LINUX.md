@@ -2,7 +2,7 @@
 
 ## EJERCICIO 1
 
-#PASO1
+##PASO1
 
 - Creación del grupo común
   
@@ -24,7 +24,7 @@
 
 <img width="291" height="50" alt="image" src="https://github.com/user-attachments/assets/ef87c30f-7a2f-4ede-9ccd-be598e497f04" />
 
-#PASO2
+##PASO2
 
 -Configurar los permisos
 
@@ -34,7 +34,7 @@
 
 <img width="454" height="72" alt="image" src="https://github.com/user-attachments/assets/b4a0eabe-9b12-46ac-b0d2-5844a7a09b77" />
 
-#PASO3
+##PASO3
 
 -Cambiar el propietario del grupo a monon1
 
@@ -49,7 +49,7 @@
 
 <img width="468" height="61" alt="image" src="https://github.com/user-attachments/assets/8e204f54-cde6-4023-a018-589b3eb3f210" />
 
--APUNTES 
+##APUNTES 
 •drwxr-x---: Nos indica el tipo de archivo y sus permisos:
 • d: Es un directorio.
 • rwx: El propietario tiene permisos completos (Lectura, Escritura y Ejecución).
@@ -58,4 +58,15 @@
 • 2: El número de enlaces duros que apuntan a este directorio.
 • monon1: Es el usuario propietario exclusivo del proyecto.
 • devEria2: Es el grupo propietario al que pertenecen el resto de desarrolladores.
+
+##PREGUNTAS
+
+-Pregunta 1
+
+<img width="320" height="88" alt="image" src="https://github.com/user-attachments/assets/9d66e52b-b89c-435b-b052-fafbeaf677b8" />
+
+He cambiado de usuario a uno que no esté en el grupo, el acceso está denegado porque pertenece a otros y "otros" o tienen permisos de nada.
+
+-Pregunta 2 
+
 
