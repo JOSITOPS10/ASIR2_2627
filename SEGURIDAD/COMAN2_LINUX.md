@@ -65,7 +65,7 @@
 
 <img width="320" height="88" alt="image" src="https://github.com/user-attachments/assets/9d66e52b-b89c-435b-b052-fafbeaf677b8" />
 
-He cambiado de usuario a uno que no esté en el grupo, el acceso está denegado porque pertenece a otros y "otros" o tienen permisos de nada.
+He cambiado de usuario a uno que no esté en el grupo, el acceso está denegado porque pertenece a otros y "otros" no tienen permisos de nada.
 
 - Pregunta 2 
 
