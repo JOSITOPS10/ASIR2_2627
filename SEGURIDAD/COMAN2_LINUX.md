@@ -69,4 +69,9 @@ He cambiado de usuario a uno que no esté en el grupo, el acceso está denegado 
 
 -Pregunta 2 
 
+<img width="668" height="204" alt="image" src="https://github.com/user-attachments/assets/74c6580f-65ae-44fb-9b34-b4bb9893f373" />
+
+<img width="657" height="523" alt="image" src="https://github.com/user-attachments/assets/c89fd2ec-ba74-4e4d-85a7-678311e2ee09" />
+
+Como tronko2 no tiene permisos de escritura, no puede modificar el archivo creado.
 
