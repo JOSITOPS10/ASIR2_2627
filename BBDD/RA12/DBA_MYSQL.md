@@ -1,4 +1,4 @@
-#AUDIO1#
+## AUDIO1
 | PARAMETRO | VALOR | PORQUE |
 |--------------|--------------|--------------|
 | innodb_buffer_pool_size       |12G| Se suele aplicar entre el 60 y 80% de la RAM disponible para la caché principal|
@@ -17,7 +17,7 @@
 | innodb_file_per_table       |ON / 1      | Guarda los datos e índices de cada tabla InnoDB en su propio archivo.      |
 | performance_schema       | ON / 1       | Habilita la recolección de métricas de rendimiento en tiempo real.    |
 
-#AUDIO2#
+## AUDIO2
 | PARAMETRO | VALOR | PORQUE |
 |--------------|--------------|--------------|
 | innodb_buffer_pool_size       | 32G - 48G      |Se asigna la mayor parte de la RAM para procesar grandes volúmenes de datos y conjuntos de resultados pesados.       |
@@ -36,7 +36,7 @@
 | innodb_file_per_table       | ON / 1      | Indispensable en grandes volúmenes para gestionar y recuperar espacio de tablas independientes.       |
 | performance_schema       |ON / 1       | Permite auditar el rendimiento y uso de recursos de las consultas pesadas       |
 
-#AUDIO3#
+## AUDIO3
 | PARAMETRO | VALOR | PORQUE |
 |--------------|--------------|--------------|
 | innodb_buffer_pool_size       |16G - 20G      |Ajustado para dar soporte a la base de datos principal de la red social de manera equilibrada.       |
