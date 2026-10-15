@@ -26,11 +26,12 @@ Tabla comentario
 ## Ejercicios
 
 Ejercicio1
-<img width="221" height="161" alt="image" src="https://github.com/user-attachments/assets/f924a592-7e41-49a8-9cd2-0b8f0ddf6199" />
 
+<img width="221" height="161" alt="image" src="https://github.com/user-attachments/assets/f924a592-7e41-49a8-9cd2-0b8f0ddf6199" />
 
 Ejercicio2
 
+<img width="530" height="43" alt="image" src="https://github.com/user-attachments/assets/c249098b-925d-4710-81b3-3e5acc34ac31" />
 
 
 Ejercicio3
