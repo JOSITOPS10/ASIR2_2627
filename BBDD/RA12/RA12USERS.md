@@ -26,6 +26,7 @@ Tabla comentario
 ## Ejercicios
 
 Ejercicio1
+<img width="221" height="161" alt="image" src="https://github.com/user-attachments/assets/f924a592-7e41-49a8-9cd2-0b8f0ddf6199" />
 
 
 Ejercicio2
