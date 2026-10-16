@@ -25,80 +25,82 @@ Tabla comentario
 
 ## Ejercicios
 
-Ejercicio1
+- Ejercicio1
 
 <img width="221" height="161" alt="image" src="https://github.com/user-attachments/assets/f924a592-7e41-49a8-9cd2-0b8f0ddf6199" />
 
-Ejercicio2
+- Ejercicio2
 
 <img width="530" height="43" alt="image" src="https://github.com/user-attachments/assets/c249098b-925d-4710-81b3-3e5acc34ac31" />
 
 
-Ejercicio3
+- Ejercicio3
+
+<img width="617" height="59" alt="image" src="https://github.com/user-attachments/assets/68915d70-ae85-498b-81af-6a8b92ed6de5" />
+
+<img width="531" height="130" alt="image" src="https://github.com/user-attachments/assets/bac5c1a9-d39c-4668-bf48-ed79af866188" />
+
+- Ejercicio4
+
+<img width="446" height="62" alt="image" src="https://github.com/user-attachments/assets/3cc9a2ac-67c9-4912-af81-50579560897b" />
+
+- Ejercicio5
+
+<img width="403" height="324" alt="image" src="https://github.com/user-attachments/assets/564e0fe8-b1ce-4b50-9d54-6d24bfda75a2" />
+
+- Ejercicio6
+
+<img width="298" height="129" alt="image" src="https://github.com/user-attachments/assets/cef751f7-ee1a-45d3-847a-478117e6d536" />
+
+- Ejercicio7
+
+<img width="446" height="64" alt="image" src="https://github.com/user-attachments/assets/b571be7f-ac9c-46cd-8f5e-b11fbc091575" />
+
+- Ejercicio8
+
+<img width="651" height="253" alt="image" src="https://github.com/user-attachments/assets/54eb860b-069b-49a0-949a-982b5298042e" />
+
+- Ejercicio9
+
+<img width="654" height="387" alt="image" src="https://github.com/user-attachments/assets/5a8766e4-dee1-46c2-acf5-1ea3447fa7c0" />
+
+- Ejercicio10
+
+<img width="340" height="85" alt="image" src="https://github.com/user-attachments/assets/b7f996c2-70db-4bba-b2cf-3f6ed94df2a2" />
+
+- Ejercicio11
 
 
 
-Ejercicio4
+- Ejercicio12
 
 
 
-Ejercicio5
+- Ejercicio13
 
 
 
-Ejercicio6
+- Ejercicio14
 
 
 
-Ejercicio7
+- Ejercicio15
 
 
 
-Ejercicio8
+- Ejercicio16
 
 
 
-Ejercicio9
+- Ejercicio17
 
 
 
-Ejercicio10
+- Ejercicio18
 
 
 
-Ejercicio11
-
-
-
-Ejercicio12
-
-
-
-Ejercicio13
-
-
-
-Ejercicio14
-
-
-
-Ejercicio15
-
-
-
-Ejercicio16
-
-
-
-Ejercicio17
-
-
-
-Ejercicio18
-
-
-
-Ejercicio19
+- Ejercicio19
 
 
 
@@ -110,19 +112,19 @@ Ejercicio21
 
 
 
-Ejercicio22
+- Ejercicio22
 
 
 
-Ejercicio23
+- Ejercicio23
 
 
 
-Ejercicio24
+- Ejercicio24
 
 
 
-Ejercicio25
+- Ejercicio25
 
 
 
