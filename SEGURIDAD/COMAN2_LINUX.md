@@ -152,11 +152,13 @@ Verificar directorio: ls -ld /di_recto/di_afano
 
 <img width="273" height="44" alt="image" src="https://github.com/user-attachments/assets/3665d011-b319-4bf8-8433-4d50e74e511a" />
 
+
 <img width="457" height="70" alt="image" src="https://github.com/user-attachments/assets/4bfdfd56-4945-4d33-9948-0c7770222ff2" />
 
 - Aplicar el sticky bit
 
 <img width="300" height="49" alt="image" src="https://github.com/user-attachments/assets/cb8237f2-1a57-45b1-b943-0d38db87f4ca" />
+
 
 <img width="467" height="67" alt="image" src="https://github.com/user-attachments/assets/583c656a-e54d-4f43-ad21-b37e5a4190e0" />
 
