@@ -104,11 +104,11 @@ Tabla comentario
 
 
 
-Ejercicio20
+- Ejercicio20
 
 
 
-Ejercicio21
+- Ejercicio21
 
 
 
