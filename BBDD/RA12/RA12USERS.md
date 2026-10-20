@@ -103,11 +103,39 @@ Tabla comentario
 
 - Ejercicio14
 
+Al intentar conectarme a Crispula y metiendo bien la contraseña me da este error:
 
+<img width="579" height="108" alt="image" src="https://github.com/user-attachments/assets/6812bfe5-113b-436d-937a-dfcf86a4eeab" />
+
+Para solucionar esto he eliminado el usuario y creándolo con localhost, luego le he vuelto a dar los permisos 
+
+<img width="584" height="168" alt="image" src="https://github.com/user-attachments/assets/071a99b5-179f-4785-9b42-0dd9c08c89f4" />
+
+Y ya me deja entrar
+
+<img width="562" height="225" alt="image" src="https://github.com/user-attachments/assets/baa1ef6f-9622-4587-93ce-f95e7aaf05d4" />
 
 - Ejercicio15
 
+He tenido que darle permisos al usuario Crispula para que pueda insertar ya que no le habiamos dado los permisos 
 
+<img width="479" height="53" alt="image" src="https://github.com/user-attachments/assets/cbb42747-7146-4ae3-ad38-aff18309b6bc" />
+
+Antes de poder insertar un comentario nos pide un usuario y un grupo, que no existía así que creamos un grupo y un usuario para que podamos insertar el comentario.
+
+- Empezamos por el usuario
+
+<img width="552" height="270" alt="image" src="https://github.com/user-attachments/assets/8fe9ab7e-93ee-4fc0-b887-5cef67a66f3d" />
+
+- El grupo
+
+<img width="569" height="297" alt="image" src="https://github.com/user-attachments/assets/78937c68-a33c-44e6-aaa9-9e837b0cdcd0" />
+
+<img width="573" height="276" alt="image" src="https://github.com/user-attachments/assets/12aefdb5-f870-465d-a83f-7c9e5f3ab38c" />
+
+- Después de tener ya estos dos creados volvemos a entrar en Crispula y desde este usuario creamos la tabla comentario.
+
+<img width="581" height="232" alt="image" src="https://github.com/user-attachments/assets/abdc64ef-747b-404a-9615-6047484ce1a9" />
 
 - Ejercicio16
 
