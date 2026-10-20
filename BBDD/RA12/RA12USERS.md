@@ -70,6 +70,13 @@ Tabla comentario
 
 - Ejercicio11
 
+<img width="274" height="48" alt="image" src="https://github.com/user-attachments/assets/9151d4de-85ec-4dbf-b5d6-c706c7533d9e" />
+
+(No me sale nada porque no tengo nada dentro)
+
+<img width="528" height="57" alt="image" src="https://github.com/user-attachments/assets/33753a7b-5660-4ebd-b92f-3ffa39fff1f1" />
+
+<img width="433" height="49" alt="image" src="https://github.com/user-attachments/assets/a3f61d55-ae4d-4f9e-bc4c-764bd1d08f44" />
 
 
 - Ejercicio12
