@@ -81,10 +81,24 @@ Tabla comentario
 
 - Ejercicio12
 
+<img width="529" height="27" alt="image" src="https://github.com/user-attachments/assets/36b2e438-eebc-4ee5-a357-16aee3085824" />
 
 
 - Ejercicio13
 
+<img width="554" height="39" alt="image" src="https://github.com/user-attachments/assets/ce1ce861-c8ef-476a-960b-1e4a1e255a8a" />
+
+- Usuario
+
+<img width="570" height="39" alt="image" src="https://github.com/user-attachments/assets/350b3687-862c-46e7-8a9a-32d9298c5779" />
+
+- Grupo
+
+<img width="576" height="49" alt="image" src="https://github.com/user-attachments/assets/a5062d5d-3bab-41c2-902b-da672d5ff92d" />
+
+- Comentario
+
+<img width="566" height="49" alt="image" src="https://github.com/user-attachments/assets/62a101da-914e-43b5-8a1e-4b30340f3903" />
 
 
 - Ejercicio14
