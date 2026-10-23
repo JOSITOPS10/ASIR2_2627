@@ -1,0 +1,87 @@
+/* CSS de da01 */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+
+main {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #333333;
+    letter-spacing: 4px;
+}
+
+
+.campo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+label {
+    font-weight: bold;
+    color: #444444;
+}
+
+
+select,
+input[type="number"] {
+    width: 140px;
+    padding: 8px;
+    border: 1px solid #bbbbbb;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+
+select:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4a6cf7;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4a6cf7;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #3a57d6;
+}
+
+
+
