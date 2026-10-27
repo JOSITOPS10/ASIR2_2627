@@ -68,7 +68,7 @@ elif tipo_dia == "fin de semana" and grupo == "individual" and residencia == "ot
 else:
     precio = precio_base
 
-# Muestra el precio final calculado
+
 print("Precio final:", precio, "€")
 
 
