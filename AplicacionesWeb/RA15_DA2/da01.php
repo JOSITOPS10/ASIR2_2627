@@ -35,12 +35,10 @@
                 </select>
             </div>
 
-
             <div class="campo">
                 <label for="puntos_oponente">Puntos oponente</label>
                 <input type="number" name="puntos_oponente" id="puntos_oponente" max="60" required>
             </div>
-
 
             <button type="submit">Suerte!!</button>
         </form>
