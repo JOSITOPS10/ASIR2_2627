@@ -85,22 +85,28 @@ COMPRUEBA EL CHANGELOG OTRA VEZ
 
 Tu compañero dice: «Mi php -v sigue mostrando 8.3.6, así que no estoy parcheado». ¿Tiene razón? ¿Cómo lo comprobarías?
 
+No necesariamente. En Ubuntu, los parches de seguridad se aplican sobre la versión que ya había, sin cambiar el número, así que seguir en 8.3.6 no significa que no esté parcheado. Yo no me fiaría del número y miraría el changelog del paquete con zcat /usr/share/doc/php8.3-common/changelog.Debian.gz | grep -E "CVE-2026-10961[89]". Si aparecen los dos CVE, el paquete ya está corregido. También miraría apt policy para ver si la versión instalada coincide con la candidata.
 
 ¿Por qué un servidor con el paquete ya actualizado puede seguir siendo vulnerable? ¿Qué comando lo evita?
 
+Porque Apache carga PHP en memoria al arrancar y, aunque actualices los archivos en disco, sigue ejecutando la copia antigua hasta que se reinicia. Así, el paquete puede estar corregido y el servidor seguir siendo vulnerable. Se evita reiniciando el servicio con sudo systemctl restart apache2 (y php8.3-fpm si se usa), y luego comprobando que la hora de arranque de Apache es posterior a la de la actualización.
 
 ¿Qué diferencia hay entre una mitigación y una corrección? Pon un ejemplo de esta práctica para cada una.
+
+Una mitigación cierra una de las vías de ataque, pero la vulnerabilidad sigue existiendo en el código. Una corrección elimina el fallo de raíz con el parche del fabricante. En la práctica, la mitigación fue desactivar session.upload_progress.enabled en el php.ini, que solo protegía contra CVE-2026-109619 y no contra el otro. La corrección fue actualizar los paquetes con apt install --only-upgrade, que instala la versión con los dos CVE
 
 
 Una empresa tiene un servidor con PHP 7.4 que «funciona perfectamente y nadie quiere tocar». ¿Qué riesgo corre con php2shell y qué le recomendarías?
 
+PHP 7.4 está fuera de soporte desde noviembre de 2022, así que ya no recibe parches de seguridad oficiales. Cualquier vulnerabilidad nueva que afecte a esa versión se queda sin corregir, y los atacantes buscan justo ese tipo de servidores olvidados. Le recomendaría planificar una migración a una versión con soporte (por ejemplo la 8.3), probándola antes en un entorno de pruebas para no romper la aplicación. Mientras tanto, aplicar las mitigaciones posibles y valorar un soporte extendido de pago si migrar lleva tiempo. Que funcione bien no significa que sea seguro.
 
 Los detalles de estas vulnerabilidades se filtraron antes de que hubiera parche. ¿Qué es una divulgación coordinada y por qué es importante respetarla?
 
+Es el proceso por el que quien descubre una vulnerabilidad avisa primero de forma privada al fabricante y espera a que haya un parche antes de publicar los detalles. Así los administradores tienen tiempo de actualizar antes de que cualquiera pueda atacar. Si se filtra antes, los atacantes conocen el fallo cuando todavía no existe solución, y eso deja a todos los usuarios expuestos sin defensa.
 
 Si administraras 50 servidores en lugar de uno, ¿harías este proceso a mano en cada uno? Investiga y nombra una herramienta que permita automatizarlo.
 
-
+No, sería lento y se cometerían errores, como olvidar reiniciar un servicio o editar mal un php.ini. Lo automatizaría con una herramienta de gestión de configuración como Ansible, que permite escribir los pasos una sola vez (hacer la copia del php.ini, aplicar la mitigación, actualizar los paquetes, reiniciar Apache) y ejecutarlos en todos los servidores a la vez por SSH. Además deja constancia de lo que se ha hecho en cada máquina.
 
 
 
