@@ -43,7 +43,6 @@ p {
     background-color: #ff4757;
     color: white;
     box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
-    transition: transform 0.2s, background-color 0.2s;
     user-select: none;
 }
 

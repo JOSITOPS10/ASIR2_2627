@@ -1,49 +1,41 @@
-<?php
+<<?php
 // Valores ordenados de MAYOR a MENOR (la posicion en la lista es la fuerza)
 $valores = ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"];
 $palos = ["P", "C", "T", "D"];
 
-// Reparte 5 cartas aleatorias (se pueden repetir)
-function repartirMano($valores, $palos) {
-    $mano = [];
+// Repartimos 5 cartas a cada jugador
+$manos = [];
+$ordenes = [];
+
+for ($j = 1; $j <= 2; $j++) {
+    $manos[$j] = [];
+    $ordenes[$j] = [];
+
     for ($i = 0; $i < 5; $i++) {
-        $mano[] = [
-            "valor" => $valores[rand(0, 12)],
-            "palo"  => $palos[rand(0, 3)]
-        ];
+        $valor = $valores[array_rand($valores)];
+        $palo = $palos[array_rand($palos)];
+
+        $manos[$j][] = $valor . $palo;                // nombre de la carta, ej: "KP"
+        $ordenes[$j][] = array_search($valor, $valores); // posicion (0 = A = la mas alta)
     }
-    return $mano;
+
+    sort($ordenes[$j]); // de mayor a menor
 }
-
-// Devuelve las posiciones de las cartas ordenadas de mayor a menor
-function ordenarMano($mano, $valores) {
-    $posiciones = [];
-    foreach ($mano as $carta) {
-        $posiciones[] = array_search($carta["valor"], $valores);
-    }
-    sort($posiciones); // posicion 0 = A = la mas alta
-    return $posiciones;
-}
-
-$mano1 = repartirMano($valores, $palos);
-$mano2 = repartirMano($valores, $palos);
-
-$orden1 = ordenarMano($mano1, $valores);
-$orden2 = ordenarMano($mano2, $valores);
 
 // Comparamos carta a carta, de mayor a menor
 $ganador = 0; // 0 = empate, 1 = jugador 1, 2 = jugador 2
 $resultado = "Empate: las dos manos tienen las mismas cartas altas.";
 
 for ($i = 0; $i < 5; $i++) {
-    if ($orden1[$i] < $orden2[$i]) {
-        $ganador = 1;
-        $resultado = "Gana el Jugador 1.\nLa carta " . ($i + 1) . " (de mayor a menor) decide: " . $valores[$orden1[$i]] . " contra " . $valores[$orden2[$i]] . ".";
-        break;
-    }
-    if ($orden2[$i] < $orden1[$i]) {
-        $ganador = 2;
-        $resultado = "Gana el Jugador 2.\nLa carta " . ($i + 1) . " (de mayor a menor) decide: " . $valores[$orden2[$i]] . " contra " . $valores[$orden1[$i]] . ".";
+    $a = $ordenes[1][$i];
+    $b = $ordenes[2][$i];
+
+    if ($a != $b) {
+        $ganador = ($a < $b) ? 1 : 2;
+        $perdedor = 3 - $ganador; // si gana el 1, pierde el 2 y al reves
+
+        $resultado = "Gana el Jugador $ganador.\nLa carta " . ($i + 1) . " (de mayor a menor) decide: "
+                   . $valores[$ordenes[$ganador][$i]] . " contra " . $valores[$ordenes[$perdedor][$i]] . ".";
         break;
     }
 }
@@ -51,43 +43,36 @@ for ($i = 0; $i < 5; $i++) {
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Partida</title>
-    <link rel="stylesheet" href="juego.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partida</title>
+<link rel="stylesheet" href="juego.css">
 </head>
 <body>
 
-    <div class="mesa">
+<div class="mesa">
 
-        <h1>Partida de Poker</h1>
+    <h1>Partida de Poker</h1>
 
-        <div class="jugador <?php if ($ganador == 1) { echo 'ganador'; } ?>">
-            <h2>Jugador 1</h2>
-            <div class="mano">
-                <?php foreach ($mano1 as $carta) { ?>
-                    <img class="carta" width="60" src="https://magicomagico.com/gilbertron/recursos/<?php echo $carta["valor"] . $carta["palo"]; ?>.png" alt="<?php echo $carta["valor"] . $carta["palo"]; ?>">
-                <?php } ?>
-            </div>
+    <?php foreach ($manos as $numero => $mano) { ?>
+    <div class="jugador <?php if ($ganador == $numero) echo 'ganador'; ?>">
+        <h2>Jugador <?php echo $numero; ?></h2>
+        <div class="mano">
+            <?php foreach ($mano as $nombre) { ?>
+            <img class="carta" width="60" src="https://magicomagico.com/gilbertron/recursos/<?php echo $nombre; ?>.png" alt="<?php echo $nombre; ?>">
+            <?php } ?>
         </div>
-
-        <div class="jugador <?php if ($ganador == 2) { echo 'ganador'; } ?>">
-            <h2>Jugador 2</h2>
-            <div class="mano">
-                <?php foreach ($mano2 as $carta) { ?>
-                    <img class="carta" width="60" src="https://magicomagico.com/gilbertron/recursos/<?php echo $carta["valor"] . $carta["palo"]; ?>.png" alt="<?php echo $carta["valor"] . $carta["palo"]; ?>">
-                <?php } ?>
-            </div>
-        </div>
-
-        <textarea readonly><?php echo $resultado; ?></textarea>
-
-        <div class="botones">
-            <a href="juego.php" class="boton">Repartir otra vez</a>
-            <a href="index.php" class="boton">Volver</a>
-        </div>
-
     </div>
+    <?php } ?>
+
+    <textarea readonly><?php echo $resultado; ?></textarea>
+
+    <div class="botones">
+        <a href="juego.php" class="boton">Repartir otra vez</a>
+        <a href="index.php" class="boton">Volver</a>
+    </div>
+
+</div>
 
 </body>
 </html>
