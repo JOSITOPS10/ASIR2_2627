@@ -1,5 +1,5 @@
-<<?php
-// Valores ordenados de MAYOR a MENOR (la posicion en la lista es la fuerza)
+<?php
+// Valores 
 $valores = ["A", "K", "Q", "J", "10", "9", "8", "7", "6", "5", "4", "3", "2"];
 $palos = ["P", "C", "T", "D"];
 
@@ -15,7 +15,7 @@ for ($j = 1; $j <= 2; $j++) {
         $valor = $valores[array_rand($valores)];
         $palo = $palos[array_rand($palos)];
 
-        $manos[$j][] = $valor . $palo;                // nombre de la carta, ej: "KP"
+        $manos[$j][] = $valor . $palo;                // nombre de la carta"
         $ordenes[$j][] = array_search($valor, $valores); // posicion (0 = A = la mas alta)
     }
 
@@ -57,13 +57,14 @@ for ($i = 0; $i < 5; $i++) {
     <?php foreach ($manos as $numero => $mano) { ?>
     <div class="jugador <?php if ($ganador == $numero) echo 'ganador'; ?>">
         <h2>Jugador <?php echo $numero; ?></h2>
-        <div class="mano">
+        <div>
             <?php foreach ($mano as $nombre) { ?>
             <img class="carta" width="60" src="https://magicomagico.com/gilbertron/recursos/<?php echo $nombre; ?>.png" alt="<?php echo $nombre; ?>">
             <?php } ?>
         </div>
     </div>
-    <?php } ?>
+    <?php 
+    } ?>
 
     <textarea readonly><?php echo $resultado; ?></textarea>
 
