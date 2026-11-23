@@ -1,0 +1,35 @@
+/* Estilos de la página index */
+body {
+    margin: 0;
+    background-color: rgb(60, 10, 20);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #00cec9;
+    color: white;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}

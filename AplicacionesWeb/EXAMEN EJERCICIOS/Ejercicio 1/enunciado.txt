@@ -1,0 +1,7 @@
+EJERCICIO 1 - DUELO DE DADOS
+
+* Una primera página con un botón "Jugar". Al pulsarlo se pasa a una segunda pantalla.
+* En la segunda pantalla cada jugador (2 jugadores) tira UN dado (número aleatorio del 1 al 6).
+* Se muestra el dado de cada jugador y se resalta el borde del ganador.
+* Debajo habrá un <textarea> que indicará quién gana (gana el que saque el número más alto) o si hay empate.
+* Dos botones: "Tirar otra vez" (vuelve a cargar juego.php) y "Volver" (va a index.php).

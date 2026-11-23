@@ -1,0 +1,8 @@
+EJERCICIO 2 - PIEDRA, PAPEL O TIJERA
+
+* Una primera página con un botón "Jugar".
+* En la segunda página juegan el Jugador y la Máquina. Cada uno elige al azar entre "Piedra", "Papel" o "Tijera".
+* Se muestra lo que ha elegido cada uno.
+* Reglas: Piedra gana a Tijera, Tijera gana a Papel, Papel gana a Piedra. Si eligen lo mismo, hay empate.
+* Debajo habrá un <textarea> que dirá quién gana la partida.
+* Botones: "Jugar otra vez" y "Volver".

@@ -1,0 +1,7 @@
+EJERCICIO 8 - NOTAS DEL EXAMEN
+
+* Una primera página con un botón "Jugar" (puedes cambiarlo por "Ver notas" si quieres).
+* En la segunda página hay 5 alumnos (Ana, Luis, Marta, Pablo y Lucía). A cada uno se le asigna una nota aleatoria del 0 al 10.
+* Se muestran en una tabla el nombre, la nota y si está "Aprobado" (5 o más) o "Suspendido".
+* Debajo habrá un <textarea> que dirá quién tiene la mejor nota, la nota media de la clase y cuántos alumnos han aprobado.
+* Botones: "Nuevo examen" y "Volver".

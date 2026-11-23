@@ -1,0 +1,7 @@
+EJERCICIO 6 - CARA O CRUZ
+
+* Una primera página con un botón "Jugar".
+* En la segunda página se lanza una moneda 10 veces. Cada lanzamiento es "Cara" o "Cruz" al azar.
+* Se muestran los 10 resultados uno al lado del otro.
+* Debajo habrá un <textarea> que dirá cuántas caras y cuántas cruces han salido, y si han salido más caras, más cruces o si hay empate.
+* Botones: "Lanzar otra vez" y "Volver".

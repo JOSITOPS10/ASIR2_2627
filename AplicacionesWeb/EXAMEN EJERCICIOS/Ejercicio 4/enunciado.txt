@@ -1,0 +1,8 @@
+EJERCICIO 4 - SUMA DE CARTAS
+
+* Una primera página con un botón "Jugar".
+* En la segunda página se reparten 3 cartas a cada jugador (2 jugadores) de una baraja de 52 cartas (A, 2, 3... 10, J, Q, K y los palos Picas, Corazones, Tréboles y Diamantes). Las cartas son aleatorias y se pueden repetir.
+* Cada carta vale lo que indica su posición: A = 1, 2 = 2, ... 10 = 10, J = 11, Q = 12, K = 13.
+* Se muestran las cartas de cada jugador y la suma de sus puntos.
+* Debajo habrá un <textarea> que dirá quién gana (el que más puntos sume) o si hay empate.
+* Botones: "Repartir otra vez" y "Volver".

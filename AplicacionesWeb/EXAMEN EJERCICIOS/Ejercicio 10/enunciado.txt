@@ -1,0 +1,7 @@
+EJERCICIO 10 - DOMINÓ
+
+* Una primera página con un botón "Jugar".
+* En la segunda página se reparten 7 fichas de dominó a cada jugador (2 jugadores). Cada ficha tiene dos números aleatorios del 0 al 6 (por ejemplo [3|5]). Las fichas se pueden repetir.
+* Se muestran las fichas de cada jugador y los puntos totales (suma de todos los números de sus fichas).
+* Debajo habrá un <textarea> que dirá quién gana: en este juego gana el que tenga MENOS puntos. Si tienen los mismos, hay empate.
+* Botones: "Repartir otra vez" y "Volver".

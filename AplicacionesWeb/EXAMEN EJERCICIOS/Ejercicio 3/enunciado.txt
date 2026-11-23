@@ -1,0 +1,7 @@
+EJERCICIO 3 - LOTERÍA
+
+* Una primera página con un botón "Jugar".
+* En la segunda página se sacan 6 números aleatorios del 1 al 49 (pueden repetirse).
+* Los números se muestran uno al lado del otro.
+* Debajo habrá un <textarea> que dirá cuál es el número MAYOR, cuál es el MENOR y cuánto suman todos los números.
+* Botones: "Sacar otros números" y "Volver".

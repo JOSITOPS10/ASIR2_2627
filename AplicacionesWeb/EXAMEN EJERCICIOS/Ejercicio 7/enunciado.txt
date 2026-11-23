@@ -1,0 +1,7 @@
+EJERCICIO 7 - TRES DADOS
+
+* Una primera página con un botón "Jugar".
+* En la segunda página cada jugador (2 jugadores) tira 3 dados (números aleatorios del 1 al 6).
+* Se muestran los 3 dados de cada jugador y la suma total de cada uno.
+* Debajo habrá un <textarea> que dirá quién gana (el que tenga la suma más alta) o si hay empate.
+* Botones: "Tirar otra vez" y "Volver".

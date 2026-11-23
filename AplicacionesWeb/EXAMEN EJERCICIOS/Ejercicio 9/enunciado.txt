@@ -1,0 +1,9 @@
+EJERCICIO 9 - LA RULETA
+
+* Una primera página con un botón "Jugar".
+* En la segunda página se gira una ruleta 5 veces. Cada giro da un número aleatorio del 0 al 36.
+* El color de cada número se decide así: el 0 es "Verde", los pares son "Rojo" y los impares son "Negro".
+* El jugador apuesta siempre al ROJO: cada vez que sale rojo gana 10 €, y si sale otro color pierde 10 €.
+* Se muestran los 5 números con su color.
+* Debajo habrá un <textarea> que dirá cuántas veces ha salido cada color y el dinero final del jugador (puede ser negativo).
+* Botones: "Girar otra vez" y "Volver".

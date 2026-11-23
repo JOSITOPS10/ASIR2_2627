@@ -1,0 +1,65 @@
+/* Estilos de la página juego */
+body {
+    background-color: rgb(60, 30, 10);
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: #e84393;
+}
+
+.mesa {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 3px solid #e84393;
+}
+
+.jugador {
+    margin: 10px 0;
+    padding: 8px;
+    border: 3px solid transparent;
+}
+
+.ganador {
+    border-color: #e84393;
+}
+
+.dato {
+    display: inline-block;
+    width: 50px;
+    margin: 3px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+.grande {
+    font-size: 60px;
+}
+
+textarea {
+    width: 90%;
+    height: 80px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid white;
+    padding: 6px 12px;
+}
+
+.boton {
+    background-color: #e84393;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}

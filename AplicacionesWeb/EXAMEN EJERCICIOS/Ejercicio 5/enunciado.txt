@@ -1,0 +1,6 @@
+EJERCICIO 5 - TABLA DE MULTIPLICAR ALEATORIA
+
+* Una primera página con un botón "Jugar".
+* En la segunda página se elige un número aleatorio del 1 al 10 y se muestra su tabla de multiplicar (del 1 al 10) en una tabla HTML.
+* Debajo habrá un <textarea> que dirá cuál es el número elegido, cuánto suman todos los resultados de la tabla y si esa suma es par o impar.
+* Botones: "Otra tabla" y "Volver".
