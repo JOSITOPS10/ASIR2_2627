@@ -12,13 +12,13 @@
        <form action="p2.php" method="POST">
            <div class="grupo-input">
                <label for="nombre">Nombre:</label>
-               <input type="text" id="nombre" name="nombre" placeholder="Ej: Alberto" required>
+               <input type="text" id="nombre" name="nombre" placeholder=" Alberto" required>
            </div>
 
 
            <div class="grupo-input">
                <label for="apellidos">Apellidos:</label>
-               <input type="text" id="apellidos" name="apellidos" placeholder="Ej: Guapo" required>
+               <input type="text" id="apellidos" name="apellidos" placeholder=" Guapo" required>
            </div>
 
 
