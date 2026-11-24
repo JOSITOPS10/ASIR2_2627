@@ -1,0 +1,154 @@
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+   background: linear-gradient(135deg, #0077be 0%, #00a8e8 100%);
+   color: #333;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+
+.contenedor {
+   background-color: #ffffff;
+   padding: 35px 40px;
+   border-radius: 20px;
+   width: 100%;
+   max-width: 500px;
+   border-top: 10px solid #e0cd1a; 
+}
+
+
+h1 {
+   color: #005f99;
+   text-align: center;
+   margin-bottom: 25px;
+   font-size: 1.9rem;
+}
+
+
+.grupo-input {
+   margin-bottom: 18px;
+}
+
+
+label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 6px;
+   color: #004466;
+}
+
+
+input[type="text"],
+input[type="number"] {
+   width: 100%;
+   padding: 12px;
+   border: 2px solid #b3e0ff;
+   border-radius: 8px;
+   font-size: 1rem;
+   transition: border-color 0.3s;
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+   outline: none;
+   border-color: #0077be;
+}
+
+
+input[readonly] {
+   background-color: #eef7fc;
+   color: #555;
+   cursor: not-allowed;
+}
+
+
+.btn {
+   display: block;
+   width: 100%;
+   padding: 14px;
+   background-color:#e0cd1a; 
+   color: white;
+   border: none;
+   border-radius: 10px;
+   font-size: 1.1rem;
+   font-weight: bold;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   margin-top: 20px;
+   transition: background-color 0.3s, transform 0.1s;
+}
+
+
+.btn:hover {
+   background-color: #e0cd1a; 
+}
+
+
+.btn:active {
+   transform: scale(0.98);
+}
+
+
+ol.lista-romana {
+   list-style-type: upper-roman;
+   padding-left: 35px;
+   margin: 20px 0;
+   font-size: 1.2rem;
+   line-height: 2;
+   color: #222;
+}
+
+body.pantalla-premio {
+   background: radial-gradient(circle, #0096c7 0%, #023e8a 100%);
+   color: white;
+   flex-direction: column;
+   text-align: center;
+   padding: 20px;
+}
+
+
+.titulo-p4 {
+   color: #ffffff;
+   font-size: 2.5rem;
+   margin-bottom: 10px;
+}
+
+
+.premio-grande-grande{
+   font-size: 15vw; 
+   font-weight: 900;
+   color: #ffd166;
+   line-height: 1.1;
+   margin: 10px 0;
+}
+
+
+.enhorabuena {
+   font-size: 3rem;
+   font-weight: bold;
+   color: #da1818;
+   padding: 15px 35px;
+   border-radius: 50px;
+   margin: 15px 0;
+}
+
+
+.btn-reintentar {
+   max-width: 320px;
+   background-color: #e0cd1a; 
+   font-size: 1.2rem;
+}
+

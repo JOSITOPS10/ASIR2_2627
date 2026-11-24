@@ -1,0 +1,38 @@
+Rellenar datos para un pitufo bonito bonito
+
+
+Realiza en local la siguiente webapp:
+Elige un pitufo que te guste y realiza la webapp sobre él (ej: Pitufo Gruñón, Pitufina, Papa Pitufo, …)
+TRABAJO INICIAL:
+descargar de Internet 4 imágenes pitufales y dejarlas en una carpeta del proyecto llamada “img”.
+
+(1 punto) index.php (página de inicio)
+-aparece un título referente al pitufo
+-aparecen dos inputs rellenables con los labels correspondientes:
+nombre y apellidos
+-botón de continuar para ir a p2.php
+
+(2.5 puntos) p2.php
+-aparece un título referente al pitufo
+-aparecen dos inputs con los labels correspondientes (con los datos rellenos de la página index.php):
+nombre y apellidos
+-aparecen dos inputs rellenables con los labels correspondientes:
+edad y nº de la suerte entre (1..9) ambos inclusive
+-aparece centrada una imagen aleatoria de la carpeta “img”.
+-botón de continuar para ir a p3.php
+
+(2.5 puntos) p3.php
+-aparece un título referente al pitufo
+-muestra resumen de todos los campos rellenados en páginas anteriores en una lista html numerada en romano.
+-botón de suerte para ir a p4.php
+
+(4 puntos) p4.php
+-aparece un título referente al pitufo
+cálculo del premio: 100 puntos multiplicado el nº de la suerte y multiplicado por un número aleatorio entre 1 y 5 generado en p4.php.
+-Muestra en grande grande grande el premio obtenido ocupando toda toda la pantalla y si es mayor de 3000 también mostraría debajo “Enhorabuena de la buena”.
+- Abajo aparece un botón que pondría “Probar suerte de nuevo”: Este botón volvería a recargar p4 probando suerte de nuevo para ver si da en este caso el “Enhorabuena de la buena”.
+
+ENTREGA EN TUTOZ:
+Url del github de la asignatura con el código fuente. 
+Documento con pantallazos de ejecución.
+Pulsa la opción “CORREGIR” del reto y corrígete tu exámen, sé minucioso con los detalles y sigue la rúbrica.(esta corrección se hace tranquilamente en casa, hasta las 23:59 de hoy) (si no está la corrección no se corrige el examen)

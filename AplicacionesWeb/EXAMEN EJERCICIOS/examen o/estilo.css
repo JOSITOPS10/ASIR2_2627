@@ -1,0 +1,192 @@
+/* Reset y estilos base */
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+   background: linear-gradient(135deg, #0077be 0%, #00a8e8 100%);
+   color: #333;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+
+.contenedor {
+   background-color: #ffffff;
+   padding: 35px 40px;
+   border-radius: 20px;
+   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+   width: 100%;
+   max-width: 500px;
+   border-top: 10px solid #e63946; /* Gorro rojo de Papá Pitufo */
+}
+
+
+h1 {
+   color: #005f99;
+   text-align: center;
+   margin-bottom: 25px;
+   font-size: 1.9rem;
+}
+
+
+.grupo-input {
+   margin-bottom: 18px;
+}
+
+
+label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 6px;
+   color: #004466;
+}
+
+
+input[type="text"],
+input[type="number"] {
+   width: 100%;
+   padding: 12px;
+   border: 2px solid #b3e0ff;
+   border-radius: 8px;
+   font-size: 1rem;
+   transition: border-color 0.3s;
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+   outline: none;
+   border-color: #0077be;
+}
+
+
+/* Estilo visual para campos ya rellenos en p2 */
+input[readonly] {
+   background-color: #eef7fc;
+   color: #555;
+   cursor: not-allowed;
+}
+
+
+/* Botones pitufales */
+.btn {
+   display: block;
+   width: 100%;
+   padding: 14px;
+   background-color: #e63946;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   font-size: 1.1rem;
+   font-weight: bold;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   margin-top: 20px;
+   transition: background-color 0.3s, transform 0.1s;
+}
+
+
+.btn:hover {
+   background-color: #c1121f;
+}
+
+
+.btn:active {
+   transform: scale(0.98);
+}
+
+
+/* Imagen centrada en p2.php */
+.caja-imagen {
+   text-align: center;
+   margin: 20px 0;
+}
+
+
+.caja-imagen img {
+   max-width: 220px;
+   max-height: 220px;
+   border-radius: 15px;
+   border: 4px solid #00a8e8;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+   object-fit: cover;
+}
+
+
+/* Lista en números romanos para p3.php */
+ol.lista-romana {
+   list-style-type: upper-roman;
+   padding-left: 35px;
+   margin: 20px 0;
+   font-size: 1.2rem;
+   line-height: 2;
+   color: #222;
+}
+
+
+ol.lista-romana li strong {
+   color: #005f99;
+}
+
+
+/* Estilos pantalla completa para p4.php */
+body.pantalla-premio {
+   background: radial-gradient(circle, #0096c7 0%, #023e8a 100%);
+   color: white;
+   flex-direction: column;
+   text-align: center;
+   padding: 20px;
+}
+
+
+.titulo-p4 {
+   color: #ffffff;
+   font-size: 2.5rem;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+   margin-bottom: 10px;
+}
+
+
+.premio-gigante {
+   font-size: 15vw; /* Ocupa toda la pantalla de forma responsiva y gigante */
+   font-weight: 900;
+   color: #ffd166;
+   text-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+   line-height: 1.1;
+   margin: 10px 0;
+}
+
+
+.enhorabuena {
+   font-size: 3rem;
+   font-weight: bold;
+   color: #06d6a0;
+   background-color: rgba(0, 0, 0, 0.35);
+   padding: 15px 35px;
+   border-radius: 50px;
+   margin: 15px 0;
+   animation: latido 1.2s infinite;
+}
+
+
+.btn-reintentar {
+   max-width: 320px;
+   background-color: #e63946;
+   font-size: 1.2rem;
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes latido {A
+   0%, 100% { transform: scale(1); }
+   50% { transform: scale(1.06); }
+}
